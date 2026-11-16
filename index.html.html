@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аватарки и баннеры для TikTok</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+  body {
+    background: #0a0a0a;
+    color: #fff;
+    min-height: 100vh;
+    background-image: radial-gradient(circle at 20% 20%, rgba(0,242,234,0.08), transparent 40%),
+                      radial-gradient(circle at 80% 80%, rgba(254,44,85,0.08), transparent 40%);
+  }
+  header {
+    text-align: center;
+    padding: 60px 20px 40px;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #00f2ea, #ff0050);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+  }
+  header p { color: #aaa; font-size: 1.1rem; }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px 60px; }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+  }
+  .card {
+    background: #141414;
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 30px 25px;
+    transition: transform .25s, border-color .25s, box-shadow .25s;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    border-color: #00f2ea;
+    box-shadow: 0 10px 30px rgba(0,242,234,0.15);
+  }
+  .card .icon { font-size: 2.2rem; margin-bottom: 12px; }
+  .card h3 { font-size: 1.3rem; margin-bottom: 8px; }
+  .card .price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00f2ea;
+    margin: 10px 0;
+  }
+  .card.video .price { color: #ff0050; }
+  .card .desc { color: #999; font-size: .95rem; line-height: 1.5; }
+
+  .order {
+    margin-top: 70px;
+    background: linear-gradient(135deg, #141414, #1a1a1a);
+    border: 1px solid #222;
+    border-radius: 24px;
+    padding: 45px 35px;
+    text-align: center;
+  }
+  .order h2 { font-size: 1.9rem; margin-bottom: 15px; }
+  .order h2 span { color: #ff0050; }
+  .order p { color: #bbb; margin-bottom: 10px; line-height: 1.6; }
+  .order ul {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+    margin: 15px 0 25px;
+    color: #ccc;
+  }
+  .order ul li { margin: 8px 0; padding-left: 24px; position: relative; }
+  .order ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #00f2ea;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 16px 42px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #00f2ea, #ff0050);
+    transition: transform .2s, box-shadow .2s;
+    box-shadow: 0 6px 20px rgba(255,0,80,0.35);
+  }
+  .btn:hover { transform: scale(1.05); box-shadow: 0 8px 28px rgba(0,242,234,0.45); }
+
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #555;
+    font-size: .9rem;
+    border-top: 1px solid #1a1a1a;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Аватарки и баннеры для TikTok</h1>
+  <p>Стильный профиль — залог внимания аудитории ✨</p>
+</header>
+
+<div class="container">
+  <div class="cards">
+    <div class="card">
+      <div class="icon">👤</div>
+      <h3>Аватарка</h3>
+      <div class="price">от 90 до 150 ₽</div>
+      <div class="desc">Индивидуальный дизайн под ваш стиль. Цена зависит от сложности и количества правок.</div>
+    </div>
+
+    <div class="card">
+      <div class="icon">🖼️</div>
+      <h3>Обычный баннер</h3>
+      <div class="price">90 – 120 ₽</div>
+      <div class="desc">Красивый статичный баннер для шапки профиля TikTok.</div>
+    </div>
+
+    <div class="card video">
+      <div class="icon">🎬</div>
+      <h3>Видео-баннер</h3>
+      <div class="price">150 ₽</div>
+      <div class="desc">Анимированный баннер, который привлекает внимание и делает профиль живым.</div>
+    </div>
+  </div>
+
+  <div class="order">
+    <h2>Как заказать <span>?</span></h2>
+    <p>Всё просто — напишите мне в Telegram и расскажите, что хотите видеть:</p>
+    <ul>
+      <li>Тематику и стиль (цвета, настроение)</li>
+      <li>Что должно быть изображено</li>
+      <li>Ссылки на примеры, если есть</li>
+      <li>Ник или надпись на баннере</li>
+    </ul>
+    <br>
+    <a class="btn" href="https://t.me/Avatarki_shopss" target="_blank">Написать в Telegram</a>
+  </div>
+</div>
+
+<footer>
+  © 2026 Дизайн аватарок и баннеров Amerix Shop. Все права защищены.
+</footer>
+
+</body>
+</html>
